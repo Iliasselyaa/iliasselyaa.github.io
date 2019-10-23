@@ -1,1 +1,79 @@
-Hello World
+<html>
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="Untitled-1.js"></script>
+<link rel="stylesheet" href="Untitled-1.css">
+<div class="center">
+        <div class = "a">
+                <div class="title">
+                        <h1>Welcome to my Quiz.</h1>
+                    </div>
+            </div>
+</div>
+</head>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+<button class="button button2 align" id="start" onclick="greeting()">Start</button>
+<p id = "Greeting"></p>
+
+<div class="w3-bar w3-blue w3-xlarge">
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-blue" style="display:none" id="leftMenu">
+        <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large w3-blue">Close &times;</button>
+        <a href="#" class="w3-bar-item w3-button w3-blue">Highscores</a>
+        <a href="#" class="w3-bar-item w3-button w3-blue">Feedback</a>
+    </div>
+    <div class="w3-blue">
+        <button class="w3-button w3-blue w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
+        <span class="w3-bar-item" id= "score">Score = score</span>
+    </div>      
+<a class="w3-bar-item w3-button w3-right" href="#"><i class="blue"></i></a>
+</div>
+
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event,'Sports')" >Sports</button>
+    <button class="tablinks" onclick="openTab(event,'Celebrities')" >Celebrities</button>
+    <button class="tablinks" onclick="openTab(event,'History')" >History</button>
+    <button class="tablinks" onclick="openTab(event,'Flags')" >Flags</button>
+</div>
+<div id="Sports" class="tabcontent">
+        <h3>Sports</h3>
+        <form>
+            <p>First Question: Whats the most popular sport?</p>
+            <input type="radio" id="correct" class="incorrect" name="q1" value="Football">
+            <label for="Football">Football</label> <br>
+        
+            <input type="radio" class="incorrect" name="q1" value="Baseball">
+            <label for="Baseball" class="incorrect">Baseball</label> <br>
+
+            <input type="radio" class="incorrect" name="q1" value="Cricket">
+            <label for="Cricket" class="incorrect">Cricket</label> <br> 
+
+            <button type="button" class="incorrect"  onclick = "checkAnswer()" >Reveal Answer</button>
+        </form>
+
+</div>
+<div id="Celebrities" class="tabcontent">
+        <h3>Celebrities</h3>
+        <p>............</p>
+</div>
+<div id="History" class="tabcontent">
+        <h3>History</h3>
+        <p>......................</p>
+</div>
+<div id="Flags" class="tabcontent">
+        <h3>Flags</h3>
+        <p>..........................</p>
+</div>
+
+<script src="Untitled-1.js" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</script>
+
+
+</body>
+
+</html>
