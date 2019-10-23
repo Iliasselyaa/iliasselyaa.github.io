@@ -29,7 +29,7 @@
     </div>
     <div class="w3-blue">
         <button class="w3-button w3-blue w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
-        <span class="w3-bar-item" id= "score">Score = score</span>
+        Score = <span id = "score">0</span>
     </div>      
 <a class="w3-bar-item w3-button w3-right" href="#"><i class="blue"></i></a>
 </div>
@@ -44,16 +44,29 @@
         <h3>Sports</h3>
         <form>
             <p>First Question: Whats the most popular sport?</p>
-            <input type="radio" id="correct" class="incorrect" name="q1" value="Football">
+            <input type="radio" id="correct1" class="incorrect1" name="q1" value="Football">
             <label for="Football">Football</label> <br>
         
-            <input type="radio" class="incorrect" name="q1" value="Baseball">
-            <label for="Baseball" class="incorrect">Baseball</label> <br>
+            <input type="radio" class="incorrect1" name="q1" value="Baseball">
+            <label for="Baseball" class="incorrect1">Baseball</label> <br>
 
-            <input type="radio" class="incorrect" name="q1" value="Cricket">
-            <label for="Cricket" class="incorrect">Cricket</label> <br> 
+            <input type="radio" class="incorrect1" name="q1" value="Cricket">
+            <label for="Cricket" class="incorrect1">Cricket</label> <br> 
 
-            <button type="button" class="incorrect"  onclick = "checkAnswer()" >Reveal Answer</button>
+            <button type="button" class="incorrect1"  onclick = "checkAnswer()" >Reveal Answer</button>
+
+            
+            <p>Second Question: who won the first football world cup?</p>
+            <input type="radio" class="incorrect2" name="q2" value="Brazil">
+            <label for="Brazil" class="incorrect2">Brazil</label> <br>
+        
+            <input type="radio" class="incorrect2" name="q2" value="Argentina">
+            <label for="Argentina" class="incorrect2">Argentina</label> <br>
+
+            <input type="radio" id ="correct2" class= "incorrect2" name="q2" value="Uruguay">
+            <label for="Uruguay">Uruguay</label> <br> 
+
+            <button type="button" class="incorrect2"  onclick = "checkAnswer2()" >Reveal Answer</button>
         </form>
 
 </div>

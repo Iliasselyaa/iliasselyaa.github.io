@@ -35,19 +35,28 @@ function closeLeftMenu() {
 
 score = 0
 function checkAnswer() {
-    var checked = document.getElementById("correct").checked
+    var checked = document.getElementById("correct1").checked
     if (checked){
         alert("correct")
-        $(".incorrect").hide(1000)
+        $(".incorrect1").hide(1000)
         score++
-        alert(score)
+        document.getElementById('score').innerHTML = score
     } else{
         alert("incorrect")
-        $(".incorrect").hide(1000)
-        alert(score)
+        $(".incorrect1").hide(1000)
     }
 }
 
-
-
+function checkAnswer2() {
+    var checked = document.getElementById("correct2").checked
+    if (checked){
+        alert("correct")
+        $(".incorrect2").hide(1000)
+        score++
+        document.getElementById('score').innerHTML = score
+    } else{
+        alert("incorrect")
+        $(".incorrect2").hide(1000)
+    }
+}
 
