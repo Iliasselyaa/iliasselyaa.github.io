@@ -1,92 +1,89 @@
 <html>
-<head>  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="Untitled-1.js"></script>
-<link rel="stylesheet" href="Untitled-1.css">
-<div class="center">
-        <div class = "a">
-                <div class="title">
-                        <h1>Welcome to my Quiz.</h1>
-                    </div>
+<title>Quiz Time</title>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="Untitled-1.js"></script>
+    <link rel="stylesheet" href="Untitled-1.css">
+    <div class="center">
+        <div class="a">
+            <div class="title">
+                <h1>Welcome to my Quiz.</h1>
             </div>
-</div>
+        </div>
+    </div>
 </head>
+
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    
-<button class="button button2 align" id="start" onclick="greeting()">Start</button>
-<p id = "Greeting"></p>
 
-<div class="w3-bar w3-blue w3-xlarge">
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-blue" style="display:none" id="leftMenu">
-        <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large w3-blue">Close &times;</button>
-        <a href="#" class="w3-bar-item w3-button w3-blue">Highscores</a>
-        <a href="#" class="w3-bar-item w3-button w3-blue">Feedback</a>
+    <button class="button button2 align" id="start" onclick="greeting()">Start</button>
+    <p id="Greeting"></p>
+
+    <div class="w3-bar w3-blue w3-xlarge">
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-blue" style="display:none" id="leftMenu">
+            <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large w3-blue">Close &times;</button>
+            <a href="highscores.html" class="w3-bar-item w3-button w3-blue">Highscores</a>
+            <a href="feedback.html" class="w3-bar-item w3-button w3-blue">Feedback</a>
+        </div>
+        <div class="w3-blue">
+            <button class="w3-button w3-blue w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
+            Score = <span id="score">0</span>/30
+        </div>
+        <a class="w3-bar-item w3-button w3-right" href="#"><i class="blue"></i></a>
     </div>
-    <div class="w3-blue">
-        <button class="w3-button w3-blue w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
-        Score = <span id = "score">0</span>
-    </div>      
-<a class="w3-bar-item w3-button w3-right" href="#"><i class="blue"></i></a>
-</div>
 
-<div class="tab">
-    <button class="tablinks" onclick="openTab(event,'Sports')" >Sports</button>
-    <button class="tablinks" onclick="openTab(event,'Celebrities')" >Celebrities</button>
-    <button class="tablinks" onclick="openTab(event,'History')" >History</button>
-    <button class="tablinks" onclick="openTab(event,'Flags')" >Flags</button>
-</div>
-<div id="Sports" class="tabcontent">
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event,'Sports')">Sports</button>
+        <button class="tablinks" onclick="openTab(event,'Celebrities')">Celebrities</button>
+        <button class="tablinks" onclick="openTab(event,'History')">History</button>
+    </div>
+    <div id="Sports" class="tabcontent">
         <h3>Sports</h3>
-        <form>
-            <p>First Question: Whats the most popular sport?</p>
-            <input type="radio" id="correct1" class="incorrect1" name="q1" value="Football">
-            <label for="Football">Football</label> <br>
-        
-            <input type="radio" class="incorrect1" name="q1" value="Baseball">
-            <label for="Baseball" class="incorrect1">Baseball</label> <br>
 
-            <input type="radio" class="incorrect1" name="q1" value="Cricket">
-            <label for="Cricket" class="incorrect1">Cricket</label> <br> 
+        <span id="0"></span><br>
+        <span id="1"></span><br>
+        <span id="2"></span><br>
+        <span id="3"></span><br>
+        <span id="4"></span><br>
+        <span id="5"></span><br>
+        <span id="6"></span><br>
+        <span id="7"></span><br>
+        <span id="8"></span><br>
+        <span id="9"></span><br>
 
-            <button type="button" class="incorrect1"  onclick = "checkAnswer()" >Reveal Answer</button>
-
-            
-            <p>Second Question: who won the first football world cup?</p>
-            <input type="radio" class="incorrect2" name="q2" value="Brazil">
-            <label for="Brazil" class="incorrect2">Brazil</label> <br>
-        
-            <input type="radio" class="incorrect2" name="q2" value="Argentina">
-            <label for="Argentina" class="incorrect2">Argentina</label> <br>
-
-            <input type="radio" id ="correct2" class= "incorrect2" name="q2" value="Uruguay">
-            <label for="Uruguay">Uruguay</label> <br> 
-
-            <button type="button" class="incorrect2"  onclick = "checkAnswer2()" >Reveal Answer</button>
-        </form>
-
-</div>
-<div id="Celebrities" class="tabcontent">
+    </div>
+    <div id="Celebrities" class="tabcontent">
         <h3>Celebrities</h3>
-        <p>............</p>
-</div>
-<div id="History" class="tabcontent">
+
+        <span id="10"></span><br>
+        <span id="11"></span><br>
+        <span id="12"></span><br>
+        <span id="13"></span><br>
+        <span id="14"></span><br>
+        <span id="15"></span><br>
+        <span id="16"></span><br>
+        <span id="17"></span><br>
+        <span id="18"></span><br>
+        <span id="19"></span><br>
+    </div>
+    <div id="History" class="tabcontent">
         <h3>History</h3>
-        <p>......................</p>
-</div>
-<div id="Flags" class="tabcontent">
-        <h3>Flags</h3>
-        <p>..........................</p>
-</div>
+        <span id="20"></span><br>
+        <span id="21"></span><br>
+        <span id="22"></span><br>
+        <span id="23"></span><br>
+        <span id="24"></span><br>
+        <span id="25"></span><br>
+        <span id="26"></span><br>
+        <span id="27"></span><br>
+        <span id="28"></span><br>
+        <span id="29"></span><br>
 
-<script src="Untitled-1.js" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</script>
-
-
+    </div>
 </body>
 
 </html>
